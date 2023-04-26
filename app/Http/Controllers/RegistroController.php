@@ -12,7 +12,7 @@ class RegistroController extends Controller
 
     public function index()
     {
-        return view('registro3');
+        return view('registro');
     }
 
     public function createCliente(RegistroRequest $request)
@@ -20,6 +20,7 @@ class RegistroController extends Controller
         $cliente = new Cliente();
         $cliente->nombre = $request->nombre;
         $cliente->apellidos = $request->apellidos;
+        $cliente->fechaNacimiento = $request->fechaNacimiento;
         $cliente->tipoIdentificacion = $request->tipoIdentificacion;
         $cliente->identificacion = $request->identificacion;
         $cliente->email = $request->email;

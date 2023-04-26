@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,14 +15,14 @@
     <link rel="stylesheet" href="{{ asset('dist/css/latform-style-9.min.css') }}" type="text/css">
 </head>
 <body>
-    
+
     <div class="form-wrapper">
         <div class="container">
             <div class="card">
                 <div class="form-cover" style="background: url(dist/images/cover4.jpg)"></div>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-4 offset-lg-7 col-md-6 offset-md-6">
+                        <div class="col-lg-5 offset-lg-6 col-md-6 offset-md-6">
                             <div class="logo text-center">
                                 <img src="{{ asset('dist/images/logo-black.png') }}" alt="logo">
                             </div>

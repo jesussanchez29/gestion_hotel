@@ -18,7 +18,7 @@ class RegistroRequest extends FormRequest
         return [
             'nombre' => 'required',
             'apellidos' => 'required',
-            'fecha_nacimiento' => 'required|date|before_or_equal:today|after_or_equal:' . date('Y-m-d', strtotime('-100 years')),
+            'fechaNacimiento' => 'required|date|before_or_equal:today|after_or_equal:' . date('Y-m-d', strtotime('-100 years')),
             'tipoIdentificacion' => 'required|in:pasaporte,carnet_conducir,dni',
             'identificacion' => ['required', new TipoIdentificacion('tipo_identificacion')],
             'email' => 'required|unique:clientes,email|regex:/^.+@.+$/i',

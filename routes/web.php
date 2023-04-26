@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistroController;
 
@@ -24,5 +25,13 @@ Route::controller(RegistroController::class)->group(function () {
     // Route para ir a la ruta registro
     Route::get('registro', 'index')->name('registro');
     // Route para crear registro base de datos
-    //Route::post('registro', 'registro');
+    Route::post('registro', 'createCliente');
+});
+
+// Route Controlador Login
+Route::controller(LoginController::class)->group(function () {
+    // Route para ir a la ruta login
+    Route::get('/login', 'index')->name('login');
+    // Route para validar las credenciales
+    Route::post('/login', 'login');
 });

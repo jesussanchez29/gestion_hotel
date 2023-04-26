@@ -17,7 +17,7 @@
             <button class="btn btn-primary btn-block">Enviar</button>
         </div>
         <p class="text-center">
-            Puedes <a href="sign-in.html">iniciar sesión</a> o <a href="sign-up.html">crear una cuenta</a>
+            Puedes <a href="{{ route('login') }}">iniciar sesión</a> o <a href="{{ route('registro') }}">crear una cuenta</a>
         </p>
     </form>
 @endsection
